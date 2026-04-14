@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanand Mishra | DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#1e293b',
+                        accent: '#38bdf8', // Light Blue
+                        highlight: '#22c55e', // Green for success/hiring
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-primary text-slate-300 font-sans selection:bg-accent selection:text-white overflow-x-hidden">
+
+    <div class="blob bg-blue-600 w-96 h-96 rounded-full top-0 left-0"></div>
+    <div class="blob bg-green-600 w-96 h-96 rounded-full bottom-0 right-0"></div>
+
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-primary/80 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-white"><span class="text-accent">&lt;</span>Portfolio<span class="text-accent">/&gt;</span></span>
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li><a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-accent md:p-0">Home</a></li>
+                    <li><a href="#about" class="block py-2 px-3 text-white hover:text-accent md:p-0 transition">About</a></li>
+                    <li><a href="#experience" class="block py-2 px-3 text-white hover:text-accent md:p-0 transition">Experience</a></li>
+                    <li><a href="#skills" class="block py-2 px-3 text-white hover:text-accent md:p-0 transition">Stack</a></li>
+                    <li><a href="#education" class="block py-2 px-3 text-white hover:text-accent md:p-0 transition">Education</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="hidden md:inline-block text-primary bg-accent hover:bg-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-all transform hover:scale-105">Hire Me</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-4 max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-wider text-accent uppercase bg-blue-900/30 rounded-full border border-blue-800">
+                Ready to Move
+            </div>
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl">
+                Hi, I'm <span class="gradient-text">Sanand Mishra</span>
+            </h1>
+            <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
+                DevOps Engineer specializing in Automating Infrastructure, CI/CD Pipelines, and Cloud Scalability.
+            </p>
+            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-primary rounded-lg bg-accent hover:bg-white focus:ring-4 focus:ring-blue-300 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(56,189,248,0.5)]">
+                    Contact Me
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                <a href="mailto:sanand4j@zohomail.in" class="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-white rounded-lg border border-white/20 hover:bg-white/10 focus:ring-4 focus:ring-gray-100 transition">
+                    <i class="fa-solid fa-envelope mr-2"></i> Email Me
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/10">
+                <div>
+                    <h3 class="text-3xl font-bold text-white">2+</h3>
+                    <p class="text-sm text-gray-400">Years Exp.</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-highlight">8.85</h3>
+                    <p class="text-sm text-gray-400">MCA CGPA</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-highlight">9.16</h3>
+                    <p class="text-sm text-gray-400">BCA CGPA</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-white">10+</h3>
+                    <p class="text-sm text-gray-400">Tech Skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up">Professional Experience</h2>
+            
+            <div class="relative border-l border-gray-700 ml-4 md:ml-0">
+                <div class="mb-10 ml-10" data-aos="fade-right">
+                    <!-- <span class="absolute flex items-center justify-center w-8 h-8 bg-accent rounded-full -left-4 ring-8 ring-primary">
+                        <i class="fa-solid fa-briefcase text-primary"></i>
+                    </span> -->
+                    <div class="glass-card p-6 rounded-lg shadow-lg hover:border-accent transition duration-300">
+                        <div class="flex flex-wrap justify-between items-center mb-2">
+                            <h3 class="flex items-center text-xl font-semibold text-white">DevOps Engineer <span class="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded ms-3">Current</span></h3>
+                            <span class="text-sm text-gray-400 block w-full md:w-auto mt-2 md:mt-0"><i class="far fa-calendar-alt mr-2"></i>Nov 2023 - Present</span>
+                        </div>
+                        <p class="text-accent font-medium mb-4">Tata Consultancy Services (TCS)</p>
+                        <p class="mb-4 text-base font-normal text-gray-400">
+                            Driving operational efficiency through infrastructure automation and CI/CD orchestration.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Managed Infrastructure as Code (IaC) using <strong>Terraform & Ansible</strong>.</li>
+                            <li>Orchestrated containerized applications using <strong>Docker & Kubernetes</strong>.</li>
+                            <li>Built and maintained CI/CD pipelines via <strong>Jenkins & GitHub Actions</strong>.</li>
+                            <li>Automated cloud operations on <strong>AWS</strong> & Linux environments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-secondary/30">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up">Technical Arsenal</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-orange-500" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-aws text-4xl text-white mb-4"></i>
+                    <h3 class="text-white font-semibold">AWS</h3>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-docker text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-white font-semibold">Docker</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-blue-600" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-dharmachakra text-4xl text-blue-600 mb-4"></i> <h3 class="text-white font-semibold">Kubernetes</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-red-500" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fab fa-jenkins text-4xl text-gray-200 mb-4"></i>
+                    <h3 class="text-white font-semibold">Jenkins</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-purple-500" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-code-branch text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-white font-semibold">Terraform</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-gray-100" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fab fa-github text-4xl text-white mb-4"></i>
+                    <h3 class="text-white font-semibold">GitHub & Actions</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-yellow-400" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fab fa-python text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-white font-semibold">Python</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-green-500" data-aos="fade-up" data-aos-delay="800">
+                    <i class="fas fa-terminal text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-white font-semibold">Bash Scripting</h3>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-gray-400" data-aos="fade-up" data-aos-delay="900">
+                    <i class="fab fa-linux text-4xl text-white mb-4"></i>
+                    <h3 class="text-white font-semibold">Linux</h3>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl text-center hover:-translate-y-2 transition duration-300 border-t-4 border-red-600" data-aos="fade-up" data-aos-delay="1000">
+                    <i class="fas fa-server text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-white font-semibold">Ansible</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group hover:bg-white/5 transition" data-aos="fade-right">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fas fa-graduation-cap text-9xl"></i>
+                    </div>
+                    <span class="bg-accent text-primary text-xs font-bold px-2 py-1 rounded mb-4 inline-block">2024 - 2026</span>
+                    <h3 class="text-2xl font-bold text-white mb-2">Master of Computer Applications</h3>
+                    <p class="text-gray-400 mb-4">SASTRA Deemed University</p>
+                    <div class="flex items-center">
+                        <div class="w-full bg-gray-700 rounded-full h-2.5 mr-4">
+                            <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2.5 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <span class="text-highlight font-bold text-lg">8.85 CGPA</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group hover:bg-white/5 transition" data-aos="fade-left">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fas fa-university text-9xl"></i>
+                    </div>
+                    <span class="bg-gray-600 text-white text-xs font-bold px-2 py-1 rounded mb-4 inline-block">2020 - 2023</span>
+                    <h3 class="text-2xl font-bold text-white mb-2">Bachelor of Computer Applications</h3>
+                    <p class="text-gray-400 mb-4">GGSIPU,Delhi</p>
+                    <div class="flex items-center">
+                        <div class="w-full bg-gray-700 rounded-full h-2.5 mr-4">
+                            <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2.5 rounded-full" style="width: 94%"></div>
+                        </div>
+                        <span class="text-highlight font-bold text-lg">9.16 CGPA</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-secondary/30">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center" data-aos="fade-up">Personal Details</h2>
+            <div class="glass-card rounded-2xl p-8" data-aos="zoom-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center text-accent">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Location</p>
+                            <p class="text-white font-medium">New Town, Kolkata, 700135</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center text-accent">
+                            <i class="fas fa-birthday-cake text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Date of Birth</p>
+                            <p class="text-white font-medium">26 November, 2001</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center text-accent">
+                            <i class="fas fa-phone text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Phone</p>
+                            <p class="text-white font-medium">+91 82948414559</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center text-accent">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Email</p>
+                            <p class="text-white font-medium break-all">sanand4j@zohomail.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-primary pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Let's Automate Together</h2>
+            <p class="text-gray-400 mb-8 max-w-lg mx-auto">Currently open for new opportunities. Feel free to reach out if you're looking for a DevOps engineer who can deliver results.</p>
+            
+            <a href="mailto:sanand4j@zohomail.in" class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent text-primary hover:bg-white hover:scale-110 transition duration-300 mx-2">
+                <i class="fas fa-envelope text-2xl"></i>
+            </a>
+            <a href="tel:+9182948414559" class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-800 text-white hover:bg-green-500 hover:text-white hover:scale-110 transition duration-300 mx-2">
+                <i class="fas fa-phone text-2xl"></i>
+            </a>
+
+            <p class="mt-12 text-sm text-gray-600">© 2026 Sanand Mishra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
